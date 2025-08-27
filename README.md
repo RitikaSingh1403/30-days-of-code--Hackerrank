@@ -1,6 +1,6 @@
 # 30 Days of Code - HackerRank ✨
 
-My daily solutions to HackerRank's [30 Days of Code](https://www.hackerrank.com/domains/tutorials/30-days-of-code) challenge, written in Java.
+My daily solutions to HackerRank's [30 Days of Code] challenge, written in Java.
 
 ## 📁What's Inside?
 
