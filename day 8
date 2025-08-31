@@ -1,0 +1,52 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        // BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+ Scanner scan = new Scanner(System.in);
+         int N = scan.nextInt();
+       int[] arr =  new int[N];
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i] = scan.nextInt();
+        }
+        // using for loop :
+        for(int i = arr.length-1;i>=0;i--)
+        {
+            System.out.print(arr[i]+" ");
+        }
+        
+        
+        // using two pointers and while loop 
+        int left=0;
+        int right=arr.length-1;
+        while(left<right){
+            int temp=arr[left];
+            arr[left]=arr[right];
+            arr[right]=temp;
+             left++;
+        right--;
+        }
+        
+        // print statement 
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+       
+       
+
+        scan.close();
+    }
+}
